@@ -6,7 +6,7 @@ Repositório criado para atividade de simplificação de expressões lógicas.
 
 Contém 7 exemplos de expressões que devem ser simplificadas da melhor maneira possível, mantendo equivalência lógica.
 
-'S1 = A ∧ B ∧ C ∨ A ∧ ~C ∨ A ∧ ~B'
+`S1 = A ∧ B ∧ C ∨ A ∧ ~C ∨ A ∧ ~B`
 
 S2 = (A ∨ B ∨ C) ∧ (~A ∨ ~B ∨ C)
 
