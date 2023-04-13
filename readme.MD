@@ -1,30 +1,32 @@
 # Introdução
 
-Repositório criado para armazenar exemplos de manipulação de matrizes em C.
+Repositório criado para atividade de simplificação de expressões lógicas.
 
-Implementações de:
-1. Alocação de memória dinâmica para uma matriz de tamanho r por c.
-2. Multiplicação de duas matrizes de tamanho compativel.
+## Expressões
 
-As implementações funcionam apenas para valores de tipo inteiro.
+Contém 7 exemplos de expressões que devem ser simplificadas da melhor maneira possível, mantendo equivalência lógica.
 
-## Biblioteca
+S1 = A∧B∧C ∨ A∧~C ∨ A∧~B
 
-As implemententações referentes às matrizes estão no arquivo little_matriz.c .
-Os cabeçalhos de todas as funções estão no little_matriz.h .
+S2 = (A∨B∨C) ∧ (~A∨~B∨C)
 
-## Compilação
+S3 = ~(~(A∧C) ∨ B ∨ D) ∨ C ∧ ~(A ∧C ∧D)
 
-Para compilar, executar no terminal:
+S4 = ~((A∨B)∧C) ∨ ~(D∧(C∨B))
+
+S5 = (~A ∨ ~B ∨ ~C) ∧ (A ∨ B ∨ ~C)
+
+S6 = ~A∧~B∧C ∨~A∧B∧C ∨~A∧B∧~C ∨A∧B∧C ∨ A∧B∧~C
+
+S7 = ~(~(A ∧ (B ∨ C))∧D) ∧ ~(A ∨ B)
+
+
+## Execução
+
+Definir na variavel 'testeSimplificado' de cada arquivo a expressão simplifica. 
+
+Cada teste pode ser executado com:
 
 ```
-gcc -o programa main.c little_matriz.c
-```
-
-## Testes
-
-Após compilar a aplicação, executar:
-
-```
-./programa
+python3 exprX.py
 ```
