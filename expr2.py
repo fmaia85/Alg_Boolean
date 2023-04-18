@@ -9,7 +9,7 @@ for valor in range(10):
     B = t.checkMod(valor, 3)
     C = t.checkMod(valor, 5)
 
-    testeOriginal     = (A or B or C) and (not A or not B or not C)
+    testeOriginal     = (A or B or C) and (not A or not B or C)
     testeSimplificado =  True
 
     print(f'({valor})\nTeste Original: {testeOriginal} \nTeste Simplificado: {testeSimplificado}')
