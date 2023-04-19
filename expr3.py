@@ -4,13 +4,13 @@ import libtestes as t
 correto = 0
 incorreto = 0
 
-for valor in range(10):
+for valor in range(1000):
     A = t.checkMod(valor, 2)
     B = t.checkMod(valor, 3)
     C = t.checkMod(valor, 5)
     D = t.checkMod(valor, 7)
 
-    testeOriginal     = not(not(A or C) or B or D) or C and not(A and C and D) 
+    testeOriginal     = not(not(A and C) or B or D) or C and not(A and C and D) 
     testeSimplificado =  True
 
     print(f'({valor})\nTeste Original: {testeOriginal} \nTeste Simplificado: {testeSimplificado}')

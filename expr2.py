@@ -4,13 +4,13 @@ import libtestes as t
 correto = 0
 incorreto = 0
 
-for valor in range(10):
+for valor in range(1000):
     A = t.checkMod(valor, 2)
     B = t.checkMod(valor, 3)
     C = t.checkMod(valor, 5)
 
     testeOriginal     = (A or B or C) and (not A or not B or C)
-    testeSimplificado =  C or A == B
+    testeSimplificado =  C or A ^ B # ^ em python é o operador XOR (ou exclusivo)
 
     print(f'({valor})\nTeste Original: {testeOriginal} \nTeste Simplificado: {testeSimplificado}')
 
